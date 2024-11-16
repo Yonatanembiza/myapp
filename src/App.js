@@ -44,7 +44,7 @@ function App() {
       <div>
         <input
           name="content"
-          placeholder="Enter your task here"
+          placeholder="Enter your task here, or I will do it myself"
           value={task}
           onChange={handleChange}
         />
