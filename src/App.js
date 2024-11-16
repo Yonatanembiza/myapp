@@ -10,7 +10,7 @@ function App() {
   useEffect(() => {
     const savedTasks = localStorage.getItem('tasks');
     if (savedTasks) {
-      console.log('Fetched from localStorage:', savedTasks); // Debugging log
+      console.log('Fetched from localStorage for inspection:', savedTasks); // Debugging log
       setContent(JSON.parse(savedTasks));
     }
   }, []);
@@ -44,7 +44,7 @@ function App() {
       <div>
         <input
           name="content"
-          placeholder="Enter your task here"
+          placeholder="Enter your task here, or I will do it myself"
           value={task}
           onChange={handleChange}
         />
